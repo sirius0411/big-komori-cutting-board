@@ -136,5 +136,5 @@ p.footer {
     margin: 0 auto;
     background-color: beige;
     height: 100%;
-    width: 56.25vh;
+    max-width: 56.25vh;
 }

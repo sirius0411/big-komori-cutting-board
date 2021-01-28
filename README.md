@@ -1,3 +1,11 @@
+## 来源声明
+
+基础部分来源于 [P家大西瓜](https://github.com/sannaha/bigwatermelon)
+
+第二等级素材来源于 [Bilibili绯赤艾莉欧表情包组](https://space.bilibili.com/476072327)表情包第一弹
+
+无协议限制，各家DD自行参照索引替换资源
+
 ## 音效吹替索引
 
 事件 | 索引 | UUID
