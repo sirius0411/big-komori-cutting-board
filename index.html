@@ -65,7 +65,7 @@
 <body style="margin: 0; background: #ddd;" align="center">
     <div style="align:center;display: none"><img src="https://cdn.jsdelivr.net/gh/sirius0411/big-komori-cutting-board/res/share.jpg" width="10%" /></div>
 
-    <div id="canvasDiv" style="width:100%;height:100%;">
+    <div id="canvasDiv">
         <canvas id="GameCanvas" oncontextmenu="event.preventDefault()" tabindex="0"></canvas>
         <div id="block-Box" style="display:block;width:100%;height:100%;"></div>
     </div>
@@ -134,8 +134,8 @@
         onload();
 
         function onload() {
-            var winHeight = document.documentElement.clientHeight;
-            document.getElementById("canvasDiv").style.height = winHeight + "px";
+            // var winHeight = document.documentElement.clientHeight;
+            // document.getElementById("canvasDiv").style.height = winHeight + "px";
         };
         window.onload = function() {
             document.getElementById("block-Box").style.display = "none";
