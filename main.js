@@ -85,6 +85,7 @@ window.boot = function() {
                     setTimeout(function() {
                         loadingBool = false;
                         loadintT.remove();
+                        document.getElementById('bgmPlayer').volume=0.2;
                     }, 0.1 * 1000);
                     clearInterval(timer);
                 }

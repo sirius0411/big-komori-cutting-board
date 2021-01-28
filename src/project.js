@@ -1119,7 +1119,7 @@ window.__require = function e(t, n, o) {
                     var e = this;
                     if (0 == this.endOne) {
                         //game over anim
-                        console.log('anim game over')
+                        // console.log('anim game over')
                         u.default.Instance.Play(1, !1, 1)
                         for (var t = 0, n = function(n) {
                                 setTimeout(function() {
@@ -1154,7 +1154,7 @@ window.__require = function e(t, n, o) {
                     }
                     return e
                 }, t.prototype.createOneFruit = function(e) {
-                    console.log('create fruit')
+                    //console.log('create fruit')
                     var t = this,
                         n = cc.instantiate(this.fruitPre);
                     n.parent = this.lineNode, n.getComponent(cc.Sprite).spriteFrame = d.default.Instance.fruit[e], n.children[0].getComponent(cc.Sprite).spriteFrame = d.default.Instance.fruit[e], n.getComponent("fruitData").fruitNumber = e, n.position = this.lineNode.children[1].position, n.scale = 0, n.getComponent(cc.RigidBody).type = cc.RigidBodyType.Static, n.getComponent(cc.PhysicsCircleCollider).radius = 0, n.getComponent(cc.PhysicsCircleCollider).apply(), cc.tween(n).to(.5, {
@@ -1174,7 +1174,7 @@ window.__require = function e(t, n, o) {
                         null != o.getComponent(cc.PhysicsCircleCollider) && (o.getComponent(cc.PhysicsCircleCollider).radius = o.height / 2, o.getComponent(cc.RigidBody).type = cc.RigidBodyType.Dynamic, o.getComponent(cc.PhysicsCircleCollider).apply())
                     }).start(), n.Instance.fruitHeigth = n.Instance.findHighestFruit()
                 }, t.prototype.createFruitSui = function(e, t) {}, t.prototype.createFruitL = function(e, t, n) {
-                    console.log(`createFruidL  type: ${typeof this}`)
+                    //console.log(`createFruidL  type: ${typeof this}`)
                     // 合成
                     u.default.Instance.Play(3, !1, .5)
                     // u.default.Instance.Play(3, !1, .5), u.default.Instance.Play(6, !1, .3);
@@ -1222,7 +1222,7 @@ window.__require = function e(t, n, o) {
                     }
                 }, t.prototype.conboHit = function(e) {
                     var t = this;
-                    console.log(`combo!!!`)
+                    //console.log(`combo!!!`)
                     u.default.Instance.Play(5, !1, .5);
                     var n = r.default.Spawn("addScore", this.bazieffect);
                     n.position = cc.v2(0, -200), n.scale = .2, n.children[0].getComponent(cc.Label).string = e, n.runAction(cc.sequence(cc.spawn(cc.scaleTo(.3, 1), cc.moveBy(.3, 0, 200), cc.rotateBy(.3, 720), cc.callFunc(function() {
@@ -1232,7 +1232,7 @@ window.__require = function e(t, n, o) {
                     var c = r.default.Spawn("score", this.bazieffect);
                     c.position = t, c.scale = .2, c.children[1].getComponent(cc.Label).string = e, c.runAction(cc.sequence(cc.spawn(cc.scaleTo(.3, n), cc.moveBy(.3, 0, 150), cc.rotateBy(.3, 720)), cc.fadeOut(o)))
                 }, t.prototype.ribbonEffect = function(e) {
-                    console.log(`ribbonEffect  type ${typeof this}`)
+                    //console.log(`ribbonEffect  type ${typeof this}`)
                     u.default.Instance.Play(3, !1, 1);
                     for (var t = s.default.getRandomNum(80, 100), n = 0; n < t; n++) {
                         var o = r.default.Spawn("star", this.bazieffect);
@@ -1329,7 +1329,7 @@ window.__require = function e(t, n, o) {
                     this.score = e, i.default.Instance.SetScoreTween(this.score)
                 }, t.prototype.GameOver = function() {
                     //switch to game over
-                    console.log('final game over')
+                    //console.log('final game over')
                     // am.default.Instance.Play(1, !1, 1)
                     var e = cc.find("Canvas").getComponent("MainGameJS"),
                         t = r.default.Instance.GetPlayerHighScore();
@@ -1628,9 +1628,9 @@ window.__require = function e(t, n, o) {
                         a.default.playerTouch = !1, l.default.Instance.ToEnd(), p.default.Instance.Play(0, !1, 1), p.default.Instance.Play(4, !1, 1)
                     }
                 }, t.prototype.onCollisionStay = function(e, t) {}, t.prototype.onCollisionExit = function(e, t) {}, t.prototype.great = function(e, t) {
-                    console.log('GREAT!')
+                    //console.log('GREAT!')
                     if (Math.abs(e.y - t.y) <= 15) {
-                        console.log('GREAT 111111!')
+                        //console.log('GREAT 111111!')
                         p.default.Instance.Play(1, !1, 1), a.default.tuoweiCtrl = !0, d.default.Instance.InjuredEffect();
                         var n = r.default.Spawn("great", cc.find("Canvas/bazieffect"));
                         e.x > 0 ? n.position = cc.v2(e.x - 40, e.y) : n.position = cc.v2(e.x + 40, e.y), n.runAction(cc.sequence(cc.spawn(cc.moveBy(.4, 0, 200), cc.rotateBy(.4, 360)), cc.scaleTo(.15, 1.1), cc.scaleTo(.15, 1), cc.fadeOut(.2))), a.default.score += 10, d.default.Instance.SetScoreTween(a.default.score)
@@ -3395,7 +3395,7 @@ window.__require = function e(t, n, o) {
                                 angle: 360
                             }).repeatForever().start();
                             var s = new cc.Node;
-                            console.log('合成最大！！')
+                            // console.log('合成最大！！')
                             s.addComponent(cc.Sprite).spriteFrame = l.default.Instance.fruit[10], s.parent = c, s.position = cc.v2(0), d.default.Instance.Play(4, !1, 1), i.default.Instance.ribbonEffect(cc.v2(0, 0)), c.runAction(cc.sequence(cc.spawn(cc.jumpBy(1, 0, 0, 300, 1), cc.scaleTo(1, 1)), cc.delayTime(1), cc.spawn(cc.moveTo(1, cc.v2(0, 500)), cc.scaleTo(1, 0)), cc.callFunc(function() {
                                 a.default.score += 100, u.default.Instance.SetScoreTween(a.default.score), e.active = !1, a.default.playerTouch = !0, c.destroy()
                             }))), n.node.active = !1, t.node.active = !1, n.node.destroy(), t.node.destroy()
