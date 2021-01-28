@@ -49,7 +49,7 @@ body {
 }
 
 #Cocos2dGameContainer {
-    position: absolute;
+    /* position: absolute; */
     margin: 0;
     left: 0px;
     top: 0px;
