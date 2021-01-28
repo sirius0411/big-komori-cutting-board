@@ -128,14 +128,13 @@ p.footer {
     }
 }
 
+#wrapper {
+    height: 100%;
+}
+
 #canvasDiv {
-    width: 56.25vw; 
-    height: 100vw; /* height:width ratio = 9/16 = .5625  */
-    background: pink;
-    max-height: 177.78vh;
-    max-width: 100vh; /* 16/9 = 1.778 */
-    margin: auto;
-    position: absolute;
-    top:0;bottom:0; /* vertical center */
-    left:0;right:0; /* horizontal center */
+    margin: 0 auto;
+    background-color: beige;
+    height: 100%;
+    width: 56.25vh;
 }
