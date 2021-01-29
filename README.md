@@ -1,8 +1,10 @@
+*KFC行为，与本人无关*
+
 ## 来源声明
 
 基础部分来源于 [P家大西瓜](https://github.com/sannaha/bigwatermelon)
 
-第二等级素材来源于 [Bilibili绯赤艾莉欧表情包组](https://space.bilibili.com/476072327)表情包第一弹
+第二等级素材与重新开始来源于 [Bilibili绯赤艾莉欧表情包组](https://space.bilibili.com/476072327)
 
 无协议限制，各家DD自行参照索引替换资源
 
@@ -26,9 +28,15 @@ game over | index 1 | d2cb5a4f-1334-4eab-8578-a76aa028644e
 
 ## 图片素材
 
+### Tile Sprites
+
 `/res/raw-assets/1b/1b81b7730.png`
 
 `/res/raw-assets/18/18858a142.png`
+
+### Restart
+
+`/res/raw-assets/a7/a7de1099-ffab-450b-8db5-54b51514fd54.png`
 
 共11个等级
 
