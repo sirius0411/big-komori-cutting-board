@@ -1465,6 +1465,14 @@ window.__require = function e(t, n, o) {
                             e && (e.style.backgroundImage = "")
                         }
                         cc.loader.onProgress = null, console.log("Success to load scene: " + t)
+
+                        var isWechat = navigator.userAgent.toLowerCase().indexOf('micromessenger') != -1;
+                        var isQQ = navigator.userAgent.toLowerCase().indexOf('qq/') != -1;
+                        var volumeMultiplier = (isWechat || isQQ) ? 0.1 : 1.0;
+                        // var volumeMultiplier = 0.1;
+                        console.log(`isQQ ${isQQ}  isWechat ${isWechat}`);
+                        var bgmPlayer = document.getElementById('bgmPlayer');
+                        bgmPlayer.volume = 0.2 * volumeMultiplier;
                     })
                 }
             }), c(o, "returnLanguage", function() {
