@@ -210,7 +210,10 @@
 
     <audio src='https://cdn.jsdelivr.net/npm/komori-chiyu-button-assets@0.0.6/dist/%E6%81%8B%E5%8F%A3%E4%B8%8A%E4%B9%8B%E6%AD%8C.mp3' autoplay hidden="true" loop="true" id="bgmPlayer"></audio>
     <script>
-        document.getElementById('bgmPlayer').volume = 0.4;
+        var player = document.getElementById('bgmPlayer');
+        player.volume = 0.4;
+        // for mobile
+        player.play();
     </script>
 
 
