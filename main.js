@@ -272,3 +272,15 @@ if (false) {
     cc.macro.CLEANUP_IMAGE_CACHE = true;
     window.boot();
 }
+
+const bgmSwitch = document.getElementById('bgmSwitch');
+bgmSwitch.addEventListener('click', (e) => {
+    const player = document.getElementById('bgmPlayer');
+    if (!player.paused && !player.ended && 0 < player.currentTime) {
+        bgmSwitch.classList.add('disable');
+        player.pause();
+    } else {
+        bgmSwitch.classList.remove('disable');
+        player.play();
+    }
+})

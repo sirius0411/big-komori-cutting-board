@@ -1524,6 +1524,7 @@ window.__require = function e(t, n, o) {
         Object.defineProperty(n, "__esModule", {
             value: !0
         });
+        var first = true;
         var a = e("./GameFunction"),
             i = e("../common/PlayerInfo"),
             r = e("../Common/PoolManager"),
@@ -1544,6 +1545,13 @@ window.__require = function e(t, n, o) {
                 }, t.prototype.update = function(e) {}, t.prototype.openTouch = function() {
                     this.node.on(cc.Node.EventType.TOUCH_START, this.onTouchStart, this), this.node.on(cc.Node.EventType.TOUCH_MOVE, this.onTouchMove, this), this.node.on(cc.Node.EventType.TOUCH_END, this.onTouchEnd, this), this.node.on(cc.Node.EventType.TOUCH_CANCEL, this.onTouchEnd, this)
                 }, t.prototype.onTouchStart = function(e) {
+
+                    if (first) {
+                        console.log('洗脑bgm ON！');
+                        document.getElementById('bgmPlayer').play();
+                        first = false;
+                    }
+
                     if (i.default.playerTouch && null != a.default.Instance.targetFruit) {
                         var t = this.node.convertToNodeSpaceAR(e.getLocation()).x,
                             n = a.default.Instance.targetFruit.y;
